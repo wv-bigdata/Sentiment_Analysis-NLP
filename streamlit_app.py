@@ -30,7 +30,7 @@ def analyze_sentiment(text):
         return "Neutral 😐"
 
 # Configura el título de la aplicación
-st.title("Análisis de Sentimientos")
+st.title("Análisis de Sentimientos en Comentarios")
 
 # Agrega un área de texto para que el usuario ingrese su texto
 user_input = st.text_area("Ingrese el comentario para analizar su sentimiento:")
@@ -48,4 +48,4 @@ if st.button("Analizar"):
         st.write("Por favor, ingrese un comentario antes de analizar.")
 
 # Pie de página
-st.caption("Aplicación análisis de sentimientos de comentarios, desarrollado por Wilbert Vong - Big Data Architect.")
+st.caption("Aplicación análisis de sentimientos en comentarios, desarrollado por Wilbert Vong - Big Data Architect.")
