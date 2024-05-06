@@ -1,5 +1,4 @@
 import streamlit as st
-import sys
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from translate import Translator
 
@@ -34,12 +33,19 @@ def analyze_sentiment(text):
 st.title("Análisis de Sentimientos")
 
 # Agrega un área de texto para que el usuario ingrese su texto
-user_input = st.text_area("Ingrese un texto en español para analizar su sentimiento:")
+user_input = st.text_area("Ingrese el comentario para analizar su sentimiento:")
 
-# Si el usuario ingresa texto, realiza el análisis de sentimientos
-if user_input:
-    # Realiza el análisis de sentimientos
-    sentimiento = analyze_sentiment(user_input)
-    
-    # Muestra el resultado al usuario
-    st.write("El sentimiento del texto es:", sentimiento)
+# Agrega un botón para realizar el análisis de sentimientos
+if st.button("Analizar"):
+    # Si el usuario ingresa texto, realiza el análisis de sentimientos
+    if user_input:
+        # Realiza el análisis de sentimientos
+        sentimiento = analyze_sentiment(user_input)
+        
+        # Muestra el resultado al usuario
+        st.write("El sentimiento del texto es:", sentimiento)
+    else:
+        st.write("Por favor, ingrese un comentario antes de analizar.")
+
+# Pie de página
+st.caption("Aplicación análisis de sentimientos de comentarios, desarrollado por Wilbert Vong - Big Data Architect.")
