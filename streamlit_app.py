@@ -23,11 +23,11 @@ def analyze_sentiment(text):
 
     # Determina la polaridad del sentimiento
     if sentiment_score['compound'] >= 0.05:
-        return "Positivo"
+        return "Positivo 😊"
     elif sentiment_score['compound'] <= -0.05:
-        return "Negativo"
+        return "Negativo ☹️"
     else:
-        return "Neutral"
+        return "Neutral 😐"
 
 # Configura el título de la aplicación
 st.title("Análisis de Sentimientos")
