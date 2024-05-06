@@ -43,7 +43,7 @@ if st.button("Analizar"):
         sentimiento = analyze_sentiment(user_input)
         
         # Muestra el resultado al usuario
-        st.write("El sentimiento del texto es:", sentimiento)
+        st.write("El sentimiento del comentario es:", sentimiento)
     else:
         st.write("Por favor, ingrese un comentario antes de analizar.")
 
