@@ -1,4 +1,5 @@
 import streamlit as st
+import sys
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from translate import Translator
 
