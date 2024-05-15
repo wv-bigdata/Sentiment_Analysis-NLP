@@ -17,8 +17,6 @@
 
 *Tokenización*:   El texto se divide en palabras o frases más pequeñas, conocidas como tokens. Cada token es una unidad individual de texto que se puede analizar de manera independiente.
 
-*Segmentación*: El OCR identifica y separa los caracteres individuales o palabras en la imagen.
-
 *Puntuación de sentimiento*: Para cada token en el texto. Esta puntuación representa cuán positivo, negativo o neutral es el sentimiento asociado con ese token.
 
 *Ponderación de las puntuaciones*: Después de asignar una puntuación de sentimiento a cada token, estas puntuaciones se ponderan para calcular una puntuación general de sentimiento para todo el texto.
